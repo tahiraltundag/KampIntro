@@ -33,7 +33,7 @@ namespace GenericsIntro
 
         public T[] Items
         {
-            get { return Items; }
+            get { return items; }
         }
     }
 }

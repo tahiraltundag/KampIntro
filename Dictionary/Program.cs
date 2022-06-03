@@ -14,6 +14,11 @@ namespace Dictionary
 
 
             Console.WriteLine(isimler.Count);
+            
+            foreach(var isim in isimler.Values)
+            {
+                Console.WriteLine(isim);
+            }
         }
     }
 
@@ -48,6 +53,16 @@ namespace Dictionary
         public int Count
         {
             get { return values.Length; }
+        }
+
+        public K[] Keys
+        {
+            get { return keys; }
+        }
+
+        public V[] Values
+        {
+            get { return values; }
         }
         
     }
